@@ -1,4 +1,4 @@
-public class Node<T implements Comparable<T>>{
+public class Node<T extends Comparable<T>>{
 	private T data;
 	private Node<T> right;
 	private Node<T> left;
@@ -6,14 +6,19 @@ public class Node<T implements Comparable<T>>{
 	public Node(T data){
 		this.data = data;
 		this.right = null;
-		this.right = null;
+		this.left = null;
+	}
+	public Node(T data, Node<T> right, Node<T> left){
+		this.data = data;
+		this.right = right;
+		this.left = left;
 	}
 
 	public Node<T> getRight(){
 		return this.right;
 	}
 	public Node<T> getLeft(){
-		return this.left;a
+		return this.left;
 	}
 	public void setRight(Node<T> nodo){
 		this.right = nodo;
