@@ -2,11 +2,13 @@ public class Node<T extends Comparable<T>>{
 	private T data;
 	private Node<T> right;
 	private Node<T> left;
+	private int balanceFactor;
 
 	public Node(T data){
 		this.data = data;
 		this.right = null;
 		this.left = null;
+		this.balanceFactor = 0;
 	}
 	public Node(T data, Node<T> right, Node<T> left){
 		this.data = data;
@@ -35,6 +37,12 @@ public class Node<T extends Comparable<T>>{
 
 	public String toString(){
 		return data.toString();
+	}
+	public int getBalanceFactor(){
+		return this.balanceFactor;
+	}
+	public void setBalanceFactor(int bf){
+		this.balanceFactor = bf;
 	}
 }
 

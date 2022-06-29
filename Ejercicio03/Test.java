@@ -5,7 +5,13 @@ public class Test{
 		System.out.println(arbol.inOrder());
 		arbol.add(12);
 		System.out.println(arbol.inOrder());
-		arbol.add(14);
+		arbol.add(16);
+		System.out.println(arbol.inOrder());
+		arbol.add(17);
+		System.out.println(arbol.inOrder());
+		arbol.add(15);
+		System.out.println(arbol.inOrder());
+		arbol.add(13);
 		System.out.println(arbol.inOrder());
 	}
 }
