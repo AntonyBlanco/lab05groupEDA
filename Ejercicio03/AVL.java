@@ -9,9 +9,9 @@ public class AVL<T extends Comparable<T>>{
 		return root == null;
 	}
 	public void add(T nuevo){
-		addNew(root, nuevo);
+		root = addNew(root, nuevo);
 	}
-	private void addNew(Node<T> actual, T nuevo){
+	private Node<T> addNew(Node<T> actual, T nuevo){
 		System.out.println("Inserting " + nuevo.toString() + " at " + actual);
 		if(actual == null){
 			actual = new Node<T>(nuevo);
@@ -19,13 +19,14 @@ public class AVL<T extends Comparable<T>>{
 		} else {
 			int comp = actual.getData().compareTo(nuevo);
 			if(comp < 0){
-				addNew(actual.getRight(), nuevo);
+				actual.setRight(addNew(actual.getRight(), nuevo));
 			} else if (comp > 0){
-				addNew(actual.getLeft(), nuevo);
+				actual.setLeft(addNew(actual.getLeft(), nuevo));
 			} else {
 				System.out.println("Elemento repetido");
 			}
 		}
+		return actual;
 	}
 
 	public String inOrder(){
