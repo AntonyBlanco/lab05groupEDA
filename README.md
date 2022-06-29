@@ -161,7 +161,11 @@ Ejemplo de codigo
 #
 ## Ejercicio 3: Árbol AVL
 
-Ejemplo de codigo
+Se realizó la implementación de inserción de un árbol AVL basado en la implementación de un Arbol Binario de Busqueda.
+
+Se diseñaron pruebas para diferentes casos como la aplicacion de rotaciones cuando el factor de equilibrio supera los límites definidos por la definición de un arbol AVL.
+
+El código se puede revisar en el siguiente link: [Arbol AVL](https://github.com/AntonyBlanco/lab04groupEDA/blob/echecalla/Ejercicio3) ubicado en el directorio "Ejercicio03" del repositorio actual.
 
 #
 <div align="center">
