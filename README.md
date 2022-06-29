@@ -407,35 +407,8 @@ Se realizó la implementación de inserción de un árbol AVL basado en la imple
 
 Se diseñaron pruebas para diferentes casos como la aplicacion de rotaciones cuando el factor de equilibrio supera los límites definidos por la definición de un arbol AVL.
 
-El código se puede revisar en el siguiente link: [Arbol AVL](https://github.com/AntonyBlanco/lab04groupEDA/blob/echecalla/Ejercicio3) ubicado en el directorio "Ejercicio03" del repositorio actual.
+El código se puede revisar en el siguiente link: [Arbol AVL](https://github.com/AntonyBlanco/lab05groupEDA/tree/main/Ejercicio03) ubicado en el directorio "Ejercicio03" del repositorio actual.
 
-#
-<div align="center">
-    <span style="font-weight:bold;"><h2>II. SOLUCIÓN DEL CUESTIONARIO </h2></span>
-</div>
-
-#
-
-- ¿Cómo se ejecutaría sus implementaciones desde terminal(consola)?
-
-    En general una lista enlazada requiere de una estructura de datos compleja, al contrario de las pilas que pueden operar con elementos simples o complejos. la forma en la que se agregan elemntos no difieren mucho en su implementación, sin embargo para la eliminación es donde tienen más diferencias, y esto basicamente es por donde las pilas pueden ejecutarse para tareas muy especificas que de hacerse con las listas enlazadas requewririan de más costo de memoria. 
-
-- ¿Cómo lo haría desde la terminal?
-
-
-Compilamos el archivo asi:
-
-```sh
-   javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
-```
-
-
-
-and corremos esto:
-
-```sh
-java -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar:. test
-```
 
 #
 <div align="center">
@@ -444,7 +417,7 @@ java -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar:. test
 
 #
 
--   Las colas y pilas se van a utilizar como una solución precisa para diversos problemas de administración de la información así como la ordenada ejecución de procesos
+-   Las colas y pilas se van a utilizar como una solución precisa para diversos problemas de administración de la información así como la ordenada ejecución de procesos.
 
 
 #
