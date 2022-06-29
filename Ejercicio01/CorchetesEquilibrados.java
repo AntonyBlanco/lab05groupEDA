@@ -9,13 +9,15 @@ public class CorchetesEquilibrados {
 	static Queue<Integer> cola = new LinkedList<Integer>();
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String cadenaLlaves;//almacena cadena de corchetes
+		String cadenaLlaves = null;//almacena cadena de corchetes
 		System.out.println("--------------------------CORCHETES EQUILIBRADOS------------------------");
 		System.out.println("Ingrese Cadena de Laves  --->  Puede Usar:  ( )  { }  [ ]");
 		System.out.println("------------------------------------------------------------------------");
 		System.out.print("====>");
 		cadenaLlaves = sc.next(); 
-		System.out.println(isBalanced(cadenaLlaves));//llamado a metodo para determinar si la cadena esta balanceada
+		System.out.println("------------------------------------------------------------------------");
+		System.out.println(isBalanced(cadenaLlaves));//llamado a metodo para determinar si la cadena esta balancead
+		System.out.println("------------------------------------------------------------------------");
 	}
 	
 	
@@ -29,7 +31,7 @@ public class CorchetesEquilibrados {
 				pila.pop();
 				cola.poll();
 				}else {
-					return "NO1";
+					return "NO";
 				}
 			}
 			return "SI";
