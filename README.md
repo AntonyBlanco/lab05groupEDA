@@ -224,60 +224,181 @@ Ejemplo 5:
 #
 ## Ejercicio 2: Operaciones de Árbol AVL
 
--   ¿Como puedo compilar este ejercicio correctamente en mi pc?
+-   En esta sección vamos se nos pide una implementación manual. de la serie de pasos que se nos proponen en los requerimientos del segundo Problema  de los ejercicios propuestos en: [Repositorio con Ejercicios propuestos](https://github.com/rescobedoq/eda/tree/main/labs/lab05) vamos a hacer uso de estas estructuras de datos para poder equilibrar los corchetes.
 
-Despúes de clonar este repositorio, para poder ejecutar este ejercicio en particular es recomendable que se ejecute desde el IDE eclipse, pues su desarrollo se dio en este,y por ello mismo es que se subieron tambien los archivos necesarios para ejecutarse ahí. Como tarea adicional debemos de agregar el archivo "JavaPlot" que se encuentra en el siguiente enlace [JavaPlot.jar](https://github.com/AntonyBlanco/lab04groupEDA/tree/echecalla/JavaPlot/JavaPlot-0.5.0/dist)
-
--   Enlace a código en GitHub de archivos principales (ListaDobleEnlazada.jar, Node, Test) para ejecutar la solución.[Ver clases Principlaes](https://github.com/AntonyBlanco/lab04groupEDA/tree/echecalla/Ejercicio2/src/LinkedListSort)
 
 -   Iniciamos La Resolución...
 
-Bien, se nos plantea implementar una lista enlazada Doble (génerica), por ello es que vamos a crear 3 clases: [ListaDobleEnlazada](https://github.com/AntonyBlanco/lab04groupEDA/blob/echecalla/Ejercicio2/src/LinkedListSort/ListaDobleEnlazada.java), [Node](https://github.com/AntonyBlanco/lab04groupEDA/blob/echecalla/Ejercicio2/src/LinkedListSort/Node.java), y [Test](https://github.com/AntonyBlanco/lab04groupEDA/blob/echecalla/Ejercicio2/src/LinkedListSort/Test.java). 
-
 -   Parte 1
 
-La Clase Node solo tiene una variante significativa en cuanto a la implememntación de un nodo de una lista enlazada simple, y es que esta tienen los nodos con referencia a un nodo anterior, y tambien una referencia a un nodo posterior.
+Para La Sección de Inserción:
 
-```sh 
-    private Node <T> nextNode ;
-    private Node <T > previousNode ;
+Inserción1
+<div align="center">
 
-    //getters and setters
-```
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-a.JPG)
+</div>
+
+Inserción 1
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-a.JPG)
+</div>
+
+Inserción 2
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-b.JPG)
+</div>
+
+Inserción 3
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-c.JPG)
+</div>
+
+Inserción 4
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-d.JPG)
+</div>
+
+Inserción 5
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-e.JPG)
+</div>
+
+Inserción 6
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-f.JPG)
+</div>
+
+Inserción 7
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-g.JPG)
+</div>
+
+Inserción 8
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-h.JPG)
+</div>
+
+Inserción 9
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-i.JPG)
+</div>
+
+Inserció 10
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-j.JPG)
+</div>
+
+Inserción 11
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-k.JPG)
+</div>
+
+Inserción 12
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-l.JPG)
+</div>
+
+Inserción 13
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-m.JPG)
+</div>
+
+
 -   Parte 2
 
+Para La sección de Eliminación
 
+Eliminación 1
+<div align="center">
 
-Ejemplo de codigo
-```sh
-    public class Node<E>{
-        private E data;
-        private Node<E> next;
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-a.JPG)
+</div>
 
-        public Node(E data,Node<E> next) {
-                this.data=data;
-                this.next=next;
-        }
-        public Node(E data) {
-                this(data,null);
-        }
-        public E getData() {
-                return this.data;
-        }
-        public void setData(E data) {
-                this.data=data;
-        }
-        public Node<E> getNext() {
-                return this.next;
-        }
-        public void setNext(Node<E> next) {
-                this.next=next;
-        }
-        public String toString() {
-                return this.data.toString();
-        }
+Eliminación 2
+<div align="center">
 
-```
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-b.JPG)
+</div>
+
+Eliminación 3
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-c.JPG)
+</div>
+
+Eliminación 4
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-d.JPG)
+</div>
+
+Eliminación 5
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-e.JPG)
+</div>
+
+Eliminación 6
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-f.JPG)
+</div>
+
+Eliminación 7
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-g.JPG)
+</div>
+
+Eliminación 8
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-h.JPG)
+</div>
+
+Eliminación 9
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-i.JPG)
+</div>
+
+Eliminación 10
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-j.JPG)
+</div>
+
+Eliminación 11
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-k.JPG)
+</div>
+
+Eliminación 12
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-l.JPG)
+</div>
+
+Eliminación 13
+<div align="center">
+
+![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-m.JPG)
+</div>
 
 #
 ## Ejercicio 3: Árbol AVL
